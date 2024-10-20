@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    background: #f4f4f4;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    page-break-inside: avoid;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left, .header-right {
+    flex: 1;
+  }
+  .header-right{
+    text-align: end;
+  }
+  .header-center {
+    flex: 0.5; /* Adjust width to better center the image */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-pic {
+    width: 80px; /* Adjust as needed */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .summary h2 {
+    margin-bottom: 5px; /* Reduce space below heading */
+  }
+  
+  .summary p {
+    margin-top: 5px; /* Reduce space above the paragraph */
+    line-height: 1.2; /* Reduce line spacing */
+  }
+    
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 10px; /* To ensure spacing between sections */
+  }
+  
+  .contact-info a {
+    text-decoration: none; /* Removes the underline */
+    color: #333; /* Sets the color */
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline; /* Optionally, add underline on hover */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9em;
+  }
+  
+  .contact-info li {
+    margin: 3px 0;
+  }
+  
+  .profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+  }
+  
+  section {
+    margin-bottom: 10px;
+  }
+  
+  section h2 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #444;
+  }
+  
+  .job, .degree {
+    margin-bottom: 10px;
+    padding-left: 15px;
+  }
+  
+  .job h3, .degree h3 {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  .job p, .project p, .degree p {
+    margin: 3px 0;
+    font-size: 0.85em;
+  }
+  
+  .skills p, .languages p {
+    margin: 5px 0;
+    font-size: 0.85em;
+    padding-left: 15px;
+  }
+  
+  .skill-category {
+    margin-bottom: 5px;
+  }
+  
+  .languages {
+    font-size: 0.85em;
+  }
+  .job-details {
+    padding-left: 15px; /* Adds padding from the left for the role and project details */
+  }
+  
+  .project {
+    padding-left: 15px; /* Adds padding from the left for each project under a job */
+  }

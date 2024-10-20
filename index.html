@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usama Bin Tahir - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-left">
+        <h1>Usama Bin Tahir</h1>
+        <p><i class="fas fa-phone"></i> 03405254664</p>
+        <p><i class="fas fa-envelope"></i> usamabintahir312@gmail.com</p>
+      </div>
+      <div class="header-center">
+        <img src="usama.jpeg" alt="Usama Bin Tahir's Snap" class="profile-pic">
+      </div>
+      <div class="header-right">
+        <p><i class="fas fa-globe"></i> <a href="https://usamabintahir.vercel.app" target="_blank">usamabintahir.vercel.app</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/usama-bin-tahir-615aa4202" target="_blank">linkedin.com/in/usama-bin-tahir</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/usama-malik-312" target="_blank">github.com/usama-malik-312</a></p>
+      </div>
+    </header>
+    
+    <hr>
+
+    <!-- Summary Section -->
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>A hardworking and passionate web developer with over three years of experience. Eager to secure a mid-level position and help the team achieve company goals through expertise in web application development, teamwork, and communication skills.</p>
+    </section>
+    <hr>
+
+    <!-- Experience Section -->
+    <section class="experience">
+      <h2>Experience</h2>
+      <div id="experience-list"></div>
+    </section>
+    <hr>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <p><strong><i class="fas fa-code"></i> Frontend:</strong> HTML 5, CSS, JavaScript, ReactJS, NextJS, TypeScript, Bootstrap, Material UI, Tailwind</p>
+      <p><strong><i class="fas fa-database"></i> Backend:</strong> Node.js, MySQL, MongoDB</p>
+      <p><strong><i class="fas fa-tools"></i> Tools:</strong> Git, WordPress</p>
+    </section>
+    <hr>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <div class="degree">
+        <h3><i class="fas fa-graduation-cap"></i> BSCS | UET, Taxila</h3>
+        <p>03/2021 - <i class="fas fa-medal"></i> Graduated with honors (GPA: 3.80/4.00, Silver Medal)</p>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Languages Section -->
+    <section class="languages">
+      <h2>Languages</h2>
+      <p>English, Urdu</p>
+    </section>
+  </div>
+
+
+    <button onclick="downloadPDF()">Download PDF</button>
+
+  <!-- Load html2pdf library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"> </script>
+ 
+  <script >
+    function downloadPDF() {
+        const element = document.querySelector('.container');
+        const options = {
+          margin: 0.2, // Adjust margins as needed
+          filename: 'Usama_Bin_Tahir_Resume.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2, scrollY: 0 }, // Ensures the whole content is captured
+          jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+        };
+
+        html2pdf().from(element).set(options).save();
+      }
+  </script>
+</body>
+</html>
